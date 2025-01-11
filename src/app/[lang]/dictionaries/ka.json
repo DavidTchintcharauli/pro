@@ -1,0 +1,31 @@
+{
+  "header": {
+    "Equipment": "აღჭურვილობა",
+    "Trainers": "ტრენერები",
+    "Certificates": "სერტიფიკატები",
+    "Schedules": "ცხრილები",
+    "Profile": "პროფილი",
+    "Blog": "ბლოგი",
+    "Products": "პროდუქტები",
+    "Posts": "პოსტები",
+    "Logout": "გასვლა",
+    "Login": "შესვლა"
+  },
+  "chatWindow": {
+    "YourPrimaryGoal": "თქვენი მიზანია:",
+    "Weight": "წონა",
+    "Lose": "დაკლება",
+    "Maintain": "შენარჩუნება",
+    "Gain": "მომატება",
+    "Gender": "სქესი",
+    "Male": "კაცი",
+    "Female": "ქალი",
+    "Age": "ასაკი",
+    "One": "ერთი",
+    "Two": "ორი",
+    "Three": "სამი",
+    "Everyday": "ყოველდღე",
+    "PleaseSpecifyYour": "გთხოვთ მიუთითოთ წონა კილოგრამებში",
+    "Send": "გაგზავნა"
+  }
+}

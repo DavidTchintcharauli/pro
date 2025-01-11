@@ -1,0 +1,75 @@
+{
+  "name": "assignment_1",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@auth0/nextjs-auth0": "^3.5.0",
+    "@coreui/coreui": "^5.2.0",
+    "@coreui/icons": "^3.0.1",
+    "@coreui/icons-react": "^2.3.0",
+    "@coreui/react": "^5.4.1",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@google/generative-ai": "^0.21.0",
+    "@mui/icons-material": "^6.1.6",
+    "@mui/material": "^6.1.6",
+    "@radix-ui/react-label": "^2.1.1",
+    "@radix-ui/react-slot": "^1.1.1",
+    "@stripe/react-stripe-js": "^3.1.1",
+    "@stripe/stripe-js": "^5.4.0",
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.47.10",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "base64-arraybuffer": "^1.0.2",
+    "class-variance-authority": "^0.7.1",
+    "i18next": "^23.16.4",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "lucide-react": "^0.469.0",
+    "material-icons": "^1.13.12",
+    "next": "^14.2.21",
+    "next-themes": "^0.3.0",
+    "react": "^18.3.1",
+    "react-country-flag": "^3.1.0",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^15.1.0",
+    "react-intl": "^6.8.7",
+    "react-router-dom": "^6.26.2",
+    "react-scripts": "5.0.1",
+    "react-spinners": "^0.14.1",
+    "stripe": "^17.5.0",
+    "tailwind-merge": "^2.5.4",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "rimraf": "^6.0.1",
+    "tailwindcss": "^3.4.14",
+    "tailwindscss": "^0.3.0"
+  }
+}

@@ -1,0 +1,122 @@
+/* .add-product-button-container {
+  position: fixed;
+  right: 10px;
+  top: 55px;
+} */
+
+.add-product-btn {
+  padding: 20px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #9cd3d8;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-product-btn:hover {
+  background-color: #79cbd3;
+  transform: scale(1.05);
+}
+
+.add-product-btn:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form input,
+.form textarea {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  padding: 10px;
+  background-color: #9cd3d8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #79cbd3;
+}
+
+.close-modal {
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  background-color: #e53935;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.tag-remove-btn {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: #ff6961;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.tag-remove-btn:hover {
+  background-color: #ff4c4c;
+}

@@ -1,0 +1,31 @@
+{
+  "header": {
+    "Equipment": "Equipment",
+    "Trainers": "Trainers",
+    "Certificates": "Certificates",
+    "Schedules": "Schedules",
+    "Profile": "Profile",
+    "Blog": "Blog",
+    "Products": "Products",
+    "Posts": "Posts",
+    "Logout": "Log Out",
+    "Login": "Log In"
+  },
+  "chatWindow": {
+    "YourPrimaryGoal": "Your Primary Goal is To:",
+    "Weight": "Weight",
+    "Lose": "Lose",
+    "Maintain": "Maintain",
+    "Gain": "Gain",
+    "Gender": "Gender",
+    "Male": "Male",
+    "Female": "Female",
+    "Age": "Age",
+    "One": "One",
+    "Two": "Two",
+    "Three": "Three",
+    "Everyday": "Everyday",
+    "PleaseSpecifyYour": "Please specify your weight in KGs",
+    "Send": "Send"
+  }
+}

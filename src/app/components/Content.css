@@ -1,0 +1,18 @@
+.content {
+  border: 1px solid white;
+  height: 75vh;
+  width: 90.5vw;
+  margin: auto;
+  padding: 0;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(30vw, 1fr));
+  gap: 20px;
+  margin: 0 auto;
+}

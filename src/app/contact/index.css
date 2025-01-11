@@ -1,0 +1,36 @@
+.contact-page{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.contact-content{
+    border: 1px solid white;
+    height:80vh;
+    display:flex;
+    flex-direction: column;
+    text-align: start;
+}
+.contact-content p {
+    padding:10px;
+    font-size:25px;
+}
+.contact-element{
+    display:flex;
+    flex-direction: row;
+    padding:20px;
+}
+.contact-form{
+    font-size:14px;
+    display:flex;
+    gap:10px;
+    padding:10px;
+}
+.form-column{
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+}
+.form-column input {
+    border-radius:5px;
+}
