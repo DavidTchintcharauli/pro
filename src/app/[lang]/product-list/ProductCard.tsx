@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./ProductCard.css";
 // import Link from "next/link";
 // import { useTranslations } from "next-intl";
@@ -6,19 +6,32 @@ import { Product } from "./fetchProducts";
 import ProductPurchase from "../../components/CheckoutButton/CheckoutButton";
 import AddToCartButton from "../../components/addToCart/addToCart";
 import { getUserIdFromSupabase } from "../../lib/getUserIdFromSupabase";
+
 interface ProductCardProps {
   product: Product;
   locale: string;
 }
 
-export default async function ProductCard({
+export default function ProductCard({
   product,
   locale,
-}: ProductCardProps): Promise<JSX.Element> {
+}: ProductCardProps): JSX.Element {
+  const [userId, setUserId] = useState<string | null>(null);
+
+  // Fetch the user ID asynchronously using useEffect
+  useEffect(() => {
+    const fetchUserId = async () => {
+      const id = await getUserIdFromSupabase();
+      setUserId(id);
+    };
+
+    fetchUserId();
+  }, []);
+
   const title = locale === "ka" ? product.title_ge : product.title_en;
   const description =
     locale === "ka" ? product.description_ge : product.description_en;
-  const userId = await getUserIdFromSupabase();
+
   return (
     <div
       key={product.id}
@@ -41,46 +54,14 @@ export default async function ProductCard({
         </p>
       </div>
       <div className="mt-4 flex items-center gap-2">
-        <AddToCartButton productId={Number(product.id)} userId={userId} />
-
+        {/* Render buttons only if userId is available */}
+        {userId && (
+          <>
+            <AddToCartButton productId={Number(product.id)} userId={userId} />
+          </>
+        )}
         <ProductPurchase productId={product.stripe_product_id} />
       </div>
     </div>
   );
 }
-
-// export default function ProductCard({
-//   product,
-//   locale,
-// }: ProductCardProps): JSX.Element {
-//   const title = locale === "ka" ? product.title_ge : product.title_en;
-//   const description =
-//     locale === "ka" ? product.description_ge : product.description_en;
-//   // const t = useTranslations("Add");
-
-//   return (
-//     <div key={product.id} className="item ">
-//       <img
-//         src={product.image}
-//         alt={title || "პროდუქტის სურათი"}
-//         className="item-img"
-//       />
-//       <h4 className="item-name ">{title || "სათაური არ არის ხელმისაწვდომი"}</h4>
-//       <div>{product.price} $</div>
-//       <p className="item-desc">
-//         {description || "აღწერა არ არის ხელმისაწვდომი"}
-//       </p>
-//       <div>
-//         {/* <button className="button">{t("Add to cart")}</button> */}
-//         <button className="button">Add to cart</button>
-//         {/* <Link
-//           href={`/${locale}/products/${product.id}`}
-//           className="moreCardBtn"
-//         >
-//           BUY Now
-//         </Link> */}
-//         <ProductPurchase productId={product.stripe_product_id} />
-//       </div>
-//     </div>
-//   );
-// }
